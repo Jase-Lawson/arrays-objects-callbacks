@@ -15,6 +15,11 @@
 */
 
 //Code here
+let me = {
+  name: 'Jase',
+  age: 22,
+}
+alert(me.name)
 
 ////////// PROBLEM 2 //////////
 
@@ -24,6 +29,22 @@
 */
 
 //Code here
+
+let favoriteThings = {
+  band: 'Red Hot Chili Peppers',
+  food: 'breakfast',
+  person: 'Wade Wilson',
+  book: 'The Richest Man in Babylon',
+  movie: 'Talladega Nights',
+  holiday: 'Fourth of July',
+};
+
+favoriteThings['car'] = 'BMW';
+favoriteThings.brand = 'GFDD';
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
+
+
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car
@@ -50,6 +71,15 @@
 */
 
 //Code here
+const backPack = {
+
+};
+
+let item = 'firstPocket';
+backPack[item] = 'chapstick';
+backPack.color = 'black';
+// alert(backPack)
+console.log(backPack)
 
 /*
   After you do the above, alert your entire backPack object.
@@ -85,6 +115,9 @@ var user2 = {
 */
 
 //Code Here
+user2.name = 'Bryan G. Smith'
+user2.email = 'bryan.smith@devmounta.in'
+
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
@@ -96,6 +129,18 @@ var user2 = {
 */
 
 //Code Here
+let methodCollection = {
+  alertHello: function () {
+    alert('hello')
+  },
+  logHello: function () {
+    console.log('hello')
+  }
+}
+
+
+
+
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
@@ -118,7 +163,9 @@ var user2 = {
 */
 
 //Code Here
-
+function makePerson(name, birthday, ssn) {
+  return { name, birthday, ssn }
+}
 ////////// PROBLEM 7 //////////
 
 /*
@@ -127,3 +174,7 @@ var user2 = {
 */
 
 //Code Here
+function makeCard(cardNumber, expirationDate, securityCode) {
+  return creditCard = {}
+}
+makeCard()
