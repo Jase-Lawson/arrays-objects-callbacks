@@ -178,7 +178,7 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
   Once you do that, write another function called addItem that is given two arguments, the first is myGroceryList and the second is an item to add to your grocery list. 
   In addItem add the item you passed in to myGroceryList then return the new, updated grocery list.
-
+  
   In both removeItem and addItem check to see if the 'myGroceryList' and 'item' arguments are truthy.
   If they are not, return an empty array.
 
@@ -190,7 +190,13 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
-
+const removeItem = (myGroceryList, item) => {
+  for (x = 0; x < myGroceryList; x++) {
+    if (item === myGroceryList[x]) {
+      return myGroceryList.splice(x, 1)
+    }
+  }
+}
 
 
 ////////// PROBLEM 9 //////////
